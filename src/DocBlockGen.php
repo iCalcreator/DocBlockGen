@@ -147,6 +147,17 @@ final class DocBlockGen implements DocBlockGenInterface
     }
 
     /**
+     * Class factory method, opt set eol/indent
+     *
+     * @param string $eol
+     * @param string $indents
+     * @return static
+     */
+    public static function init( $eol = null, $indents = null ) {
+        return new static( $eol, $indents );
+    }
+
+    /**
      * Return code as array (with NO eol at line endings)
      */
     public function toArray() {

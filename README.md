@@ -48,7 +48,13 @@ $codeDocBlock = DocBlockGen::factory()
 
 ```DocBlockGen::__construct( [ eol [, indent ]] )```
 * eol     string, default PHP_EOL
-* indent  string, default four spaces 
+* indent  string, default four spaces, for no indent, use '' 
+
+```DocBlockGen::init( [ eol [, indent ]] )```
+* eol     string, default PHP_EOL
+* indent  string, default four spaces, for no indent, use ''
+* Static
+* Return static
 
 ```DocBlockGen::factory(  [  tagName [, tagType [, tagText [, tagComment [, tagExt ]]]] )```
 * tagName    string, convenient constants found in DocBlockGenInterface 
